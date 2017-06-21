@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RocketLeagueScore</string>
+    <string name="blue_score">0</string>
+    <string name="orange_score">0</string>
+    <string name="timer">5:00</string>
+    <string name="blue_team">Blue :</string>
+    <string name="blue_goal_button">goal!</string>
+    <string name="blue_demolitions">0</string>
+    <string name="blue_demo_button">demolition</string>
+    <string name="orange_team">Orange :</string>
+    <string name="orange_goal_button">goal!</string>
+    <string name="orange_demolitions">0</string>
+    <string name="orange_demo_button">demolition</string>
+    <string name="start_btn">start</string>
+</resources>

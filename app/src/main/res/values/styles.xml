@@ -1,0 +1,238 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ScrollView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/background</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="RelativeLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LinearScoreBoard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="BlueScore">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/darkBlue</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/ScoreText</item>
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+    <style name="OrangeScore">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/ScoreText</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+    </style>
+
+    <style name="Timer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/TimerText</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+    </style>
+
+    <style name="DoubleStatsLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@id/score</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="StatsLinear">
+        <item name="android:layout_width">@dimen/StatsLinearWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/BigMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/SmallMarginLeft</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="BlueTeam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/darkBlue</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/Team</item>
+    </style>
+
+    <style name="OrangeTeam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/OrangeTeamMarginLeft</item>
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/Team</item>
+    </style>
+
+    <style name="BlueGoalBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:background">@color/lightBlue</item>
+        <item name="android:onClick">oneGoalBlueTeam</item>
+        <item name="android:textSize">@dimen/GoalTxtSize</item>
+    </style>
+
+    <style name="OrangeGoalBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/OrangeGoalBtnMarginLeft</item>
+        <item name="android:background">@color/lightOrange</item>
+        <item name="android:onClick">oneGoalOrangeTeam</item>
+        <item name="android:textSize">@dimen/GoalTxtSize</item>
+    </style>
+
+    <style name="OrangeDemoLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/SmallMarginBottom</item>
+        <item name="android:layout_marginLeft">@dimen/OrangeDemoLinearMargineLeft</item>
+    </style>
+
+    <style name="BlueDemoLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:layout_marginBottom">@dimen/SmallMarginBottom</item>
+    </style>
+
+    <style name="DemoImgBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/SmallPaddingLeft</item>
+        <item name="android:paddingTop">@dimen/SmallPaddingTop</item>
+        <item name="android:src">@drawable/demoblue</item>
+    </style>
+
+    <style name="DemoImgOrange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/SmallPaddingLeft</item>
+        <item name="android:paddingTop">@dimen/SmallPaddingTop</item>
+        <item name="android:src">@drawable/demo</item>
+    </style>
+
+    <style name="DemoTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/SmallPaddingLeft</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/DemoText</item>
+    </style>
+
+    <style name="DemoBtnBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/lightBlue</item>
+        <item name="android:onClick">oneDemolitionBlueTeam"</item>
+    </style>
+
+    <style name="DemoBtnOrange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/lightOrange</item>
+        <item name="android:onClick">oneDemolitionOrangeTeam"</item>
+        <item name="android:layout_marginLeft">@dimen/DemoBtnOrangeMargineLeft</item>
+    </style>
+
+    <style name="View">
+        <item name="android:layout_width">@dimen/ViewWidth</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="StartBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">@dimen/StartBtnMarginBottom</item>
+        <item name="android:background">@drawable/race</item>
+        <item name="android:onClick">StartNew</item>
+        <item name="android:textSize">@dimen/StartBtnTextSize</item>
+    </style>
+
+    <style name="BtnStop">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="LandStatsLinear">
+        <item name="android:layout_width">@dimen/StatsLinearWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/SmallMarginLeft</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+
+    <style name="LandBlueDemoLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LandOrangeDemoLinear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginLeft">@dimen/LandOrangeDemoLinearMarginLeft</item>
+    </style>
+
+    <style name="LandOrangeTeam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/LandOrangeTeamMarginLeft</item>
+        <item name="android:background">@color/darkOrange</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/Team</item>
+    </style>
+
+    <style name="LandOrangeGoalBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/SmallMarginTop</item>
+        <item name="android:layout_marginLeft">@dimen/LandOrangeGoalBtnMarginLeft</item>
+        <item name="android:background">@color/lightOrange</item>
+        <item name="android:onClick">oneGoalOrangeTeam</item>
+        <item name="android:textSize">@dimen/GoalTxtSize</item>
+    </style>
+
+    <style name="LandDemoBtnOrange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/lightOrange</item>
+        <item name="android:onClick">oneDemolitionOrangeTeam"</item>
+        <item name="android:layout_marginLeft">@dimen/LandDemoBtnOrangeMargineLeft</item>
+    </style>
+</resources>

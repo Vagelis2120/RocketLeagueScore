@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ScoreText">50sp</dimen>
+    <dimen name="TimerText">46sp</dimen>
+    <dimen name="SmallMarginTop">8dp</dimen>
+    <dimen name="BigMarginTop">48dp</dimen>
+    <dimen name="SmallMarginLeft">16dp</dimen>
+    <dimen name="SmallMarginBottom">8dp</dimen>
+    <dimen name="StatsLinearWidth">0dp</dimen>
+    <dimen name="Team">30sp</dimen>
+    <dimen name="GoalTxtSize">24sp</dimen>
+    <dimen name="SmallPaddingLeft">8dp</dimen>
+    <dimen name="SmallPaddingTop">8dp</dimen>
+    <dimen name="DemoText">36sp</dimen>
+    <dimen name="ViewWidth">5dp</dimen>
+    <dimen name="StartBtnMarginBottom">24dp</dimen>
+    <dimen name="StartBtnTextSize">36sp</dimen>
+    <dimen name="OrangeTeamMarginLeft">40dp</dimen>
+    <dimen name="OrangeGoalBtnMarginLeft">64dp</dimen>
+    <dimen name="OrangeDemoLinearMargineLeft">72dp</dimen>
+    <dimen name="DemoBtnOrangeMargineLeft">64dp</dimen>
+    <dimen name="LandOrangeTeamMarginLeft">148dp</dimen>
+    <dimen name="LandOrangeGoalBtnMarginLeft">172dp</dimen>
+    <dimen name="LandOrangeDemoLinearMarginLeft">180dp</dimen>
+    <dimen name="LandDemoBtnOrangeMargineLeft">172dp</dimen>
+</resources>

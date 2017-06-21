@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollView"
+    tools:context="com.example.android.rocketleaguescore.MainActivity">
+
+    <RelativeLayout style="@style/RelativeLayout">
+
+        <LinearLayout
+            android:id="@+id/score"
+            style="@style/LinearScoreBoard">
+
+
+            <TextView
+                android:id="@+id/blue_score"
+                style="@style/BlueScore"
+                android:text="@string/blue_score" />
+
+            <TextView
+                android:id="@+id/textTime"
+                style="@style/Timer"
+                android:text="@string/timer" />
+
+            <TextView
+                android:id="@+id/orange_score"
+                style="@style/OrangeScore"
+                android:text="@string/orange_score" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/DoubleStatsLinear">
+
+            <LinearLayout style="@style/StatsLinear">
+
+                <TextView
+                    style="@style/BlueTeam"
+                    android:text="@string/blue_team" />
+
+                <Button
+                    style="@style/BlueGoalBtn"
+                    android:text="@string/blue_goal_button" />
+
+
+                <LinearLayout style="@style/BlueDemoLinear">
+
+                    <ImageView style="@style/DemoImgBlue" />
+
+                    <TextView
+                        android:id="@+id/blue_demolition"
+                        style="@style/DemoTxt"
+                        android:text="@string/blue_demolitions" />
+                </LinearLayout>
+
+                <Button
+                    style="@style/DemoBtnBlue"
+                    android:text="@string/blue_demo_button" />
+
+            </LinearLayout>
+
+            <View style="@style/View" />
+
+            <LinearLayout style="@style/StatsLinear">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/OrangeTeam"
+                    android:text="@string/orange_team" />
+
+                <Button
+                    style="@style/OrangeGoalBtn"
+                    android:text="@string/orange_goal_button" />
+
+
+                <LinearLayout style="@style/OrangeDemoLinear">
+
+                    <ImageView style="@style/DemoImgOrange" />
+
+                    <TextView
+                        android:id="@+id/orange_demolition"
+                        style="@style/DemoTxt"
+                        android:text="@string/orange_demolitions" />
+                </LinearLayout>
+
+                <Button
+                    style="@style/DemoBtnOrange"
+                    android:text="@string/orange_demo_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/StartBtn"
+            android:text="@string/start_btn" />
+
+        <Button
+            android:id="@+id/btnStop"
+            style="@style/BtnStop" />
+
+    </RelativeLayout>
+
+</ScrollView>
